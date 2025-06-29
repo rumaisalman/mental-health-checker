@@ -1,0 +1,25 @@
+[project]
+name = "mental-health-checker"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Rumaisa Salman", email = "rumi.salman813@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.115.13",
+    "httpx>=0.28.1",
+    "openai>=1.91.0",
+    "openai-agents>=0.0.19",
+    "python-dotenv>=1.1.1",
+    "uvicorn>=0.34.3",
+]
+
+[project.scripts]
+mental-health-checker = "mental_health_checker:main"
+start="agents-sdk.main:start"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
