@@ -21,7 +21,7 @@ agent = Agent(
     name="CheckInBuddy",
     instructions="You're kind, warm, and helpful. Always validate the user's emotions.",
     model=OpenAIChatCompletionsModel(
-        model="mistralai/mistral-small-3.2-24b-instruct:free",
+        model="deepseek/deepseek-chat-v3-0324:free",
         openai_client=client,
     )
 )
